@@ -13,20 +13,24 @@ import java.util.UUID;
 
 public class onPlayerDeath implements Listener {
 
+    //Create the hashmap to be later used for saving the drops
     public HashMap<UUID, ItemStack[]> items = new HashMap<UUID , ItemStack[]>();
+
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent e) {
-
+        //Check if player keeps the inventory
         if (!e.getKeepInventory()) {
-            Bukkit.broadcastMessage("It's working!");
 
-
+            //Create an itemstack that contains the inventory of the player
             ItemStack[] content = e.getEntity().getInventory().getContents();
+            //Put the itemstack in the hashmap
             items.put(e.getEntity().getPlayer().getUniqueId(), content);
 
+            //TODO: Actual logic of items
 
 
-            items.entrySet().forEach(entry -> Bukkit.getLogger().log(Level.INFO, entry.getKey().toString() + ":" + entry.getValue().toString()));
+
+            //Once checks are done, clear the hashmap to avoid performance loss
             items.clear();
         }
         return;

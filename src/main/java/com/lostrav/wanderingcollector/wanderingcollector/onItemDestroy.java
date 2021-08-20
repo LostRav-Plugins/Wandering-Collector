@@ -11,11 +11,13 @@ public class onItemDestroy extends JavaPlugin implements Listener {
     @EventHandler
     public void onItemDestroy(EntityDamageEvent e) {
 
+        // Check if the damaged entity is a dropped item
         if (e.getEntityType().equals(EntityType.DROPPED_ITEM)) {
 
             //TODO: Check with hashmap for correspondence
 
         }
+
         return;
 
     }
