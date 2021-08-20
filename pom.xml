@@ -15,7 +15,7 @@
     </distributionManagement>
     <groupId>com.lostrav.wanderingcollector</groupId>
     <artifactId>wanderingcollector</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1-DEV</version>
     <packaging>jar</packaging>
 
     <name>Wandering Collector</name>
