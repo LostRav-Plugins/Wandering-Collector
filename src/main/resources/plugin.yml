@@ -1,0 +1,8 @@
+name: WanderingCollector
+version: '${project.version}'
+main: com.lostrav.wanderingcollector.wanderingcollector.WanderingCollector
+api-version: 1.14
+prefix: WAND-COLL
+authors: [ Filliravaz, LostAndDead ]
+description: Get back some of your items when you die by purchasing them from a villager!
+website: lostanddead.co.uk
