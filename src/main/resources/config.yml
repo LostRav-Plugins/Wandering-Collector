@@ -1,1 +1,16 @@
 //TODO: Make useful configuration file
+
+Database:
+  Host: www.example.com
+  Port: 3306
+  Database: collector
+  Username: user
+  Password: pass
+
+//Enable the wandering collector to return lost items
+EnableCollector: true
+//Allow cats to return lost items
+EnableCat: false
+
+//How many items the collector/cat can store at once before forgetting old items
+StorageLimit: 20

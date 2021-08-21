@@ -13,6 +13,10 @@ import java.util.UUID;
 
 public class onPlayerDeath implements Listener {
 
+    WanderingCollector CORE;
+
+    public onPlayerDeath(WanderingCollector CORE){ this.CORE = CORE; }
+
     //Create the hashmap to be later used for saving the drops
     public HashMap<UUID, ItemStack[]> items = new HashMap<UUID , ItemStack[]>();
 

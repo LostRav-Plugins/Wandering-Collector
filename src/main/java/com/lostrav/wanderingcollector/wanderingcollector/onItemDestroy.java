@@ -8,6 +8,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class onItemDestroy extends JavaPlugin implements Listener {
 
+    WanderingCollector CORE;
+
+    public onItemDestroy(WanderingCollector CORE){ this.CORE = CORE; }
+
     @EventHandler
     public void onItemDestroy(EntityDamageEvent e) {
 
